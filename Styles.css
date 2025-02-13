@@ -1,7 +1,7 @@
 /* General Page Styling */
 body {
-    font-family: Arial, sans-serif;
-    background-color: #1a1a1a;
+    font-family: 'Arial', sans-serif;
+    background: #121212;
     color: white;
     text-align: center;
     margin: 0;
@@ -19,11 +19,14 @@ body {
     line-height: 50px;
     border: 2px solid yellow;
     font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0px 0px 10px yellow;
 }
 
 /* Headings */
 h1, h2 {
     color: gold;
+    text-shadow: 2px 2px 10px yellow;
 }
 
 /* Gold Price Box */
@@ -35,6 +38,7 @@ h1, h2 {
     margin: 20px auto;
     width: 80%;
     max-width: 500px;
+    box-shadow: 0px 0px 15px gold;
 }
 
 /* Tables Styling */
@@ -44,28 +48,37 @@ table {
     border-collapse: collapse;
     background: #222;
     color: white;
+    box-shadow: 0px 0px 10px yellow;
 }
 
 th, td {
     border: 1px solid yellow;
     padding: 10px;
     text-align: center;
+    font-size: 18px;
 }
 
 th {
     background: gold;
     color: black;
+    text-shadow: 1px 1px 3px white;
 }
 
-/* Image Size Fix */
+/* Image Size & Effects */
 .charts img {
     width: 100%;
-    max-width: 600px; /* Adjust max width */
+    max-width: 600px;
     height: auto;
     display: block;
     margin: 10px auto;
     border-radius: 10px;
     border: 2px solid yellow;
+    box-shadow: 0px 0px 20px gold;
+    transition: transform 0.3s ease-in-out;
+}
+
+.charts img:hover {
+    transform: scale(1.05);
 }
 
 /* Contact Button */
@@ -77,12 +90,14 @@ button {
     border: 2px solid yellow;
     cursor: pointer;
     border-radius: 5px;
-    transition: 0.3s;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0px 0px 10px yellow;
 }
 
 button:hover {
     background: yellow;
     color: black;
+    box-shadow: 0px 0px 20px white;
 }
 
 /* Contact Details Box */
@@ -94,4 +109,5 @@ button:hover {
     text-align: center;
     margin-top: 10px;
     border-radius: 5px;
+    box-shadow: 0px 0px 10px yellow;
 }
