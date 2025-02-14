@@ -1,129 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gold & Silver Market Updates</title>
-    
+    <link rel="stylesheet" href="styles.css">
     <style>
-        /* General Page Styling */
-        body {
-            font-family: 'Arial', sans-serif;
-            background: #121212;
-            color: white;
-            text-align: center;
-            margin: 0;
-            padding: 0;
-        }
-
-        /* Banner Styling */
         .banner {
             width: 100%;
             height: 50px;
-            background: black;
+            background: rgb(255, 125, 3);
             color: yellow;
             text-align: center;
             font-size: 18px;
             line-height: 50px;
             border: 2px solid yellow;
-            font-weight: bold;
-            text-transform: uppercase;
-            box-shadow: 0px 0px 10px yellow;
-        }
-
-        /* Headings */
-        h1, h2 {
-            color: gold;
-            text-shadow: 2px 2px 10px yellow;
-        }
-
-        /* Gold Price Box */
-        .gold-price {
-            background: #333;
-            padding: 15px;
-            border-radius: 10px;
-            display: inline-block;
-            margin: 20px auto;
-            width: 80%;
-            max-width: 500px;
-            box-shadow: 0px 0px 15px gold;
-        }
-
-        /* Tables Styling */
-        table {
-            width: 90%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            background: #222;
-            color: white;
-            box-shadow: 0px 0px 10px yellow;
-        }
-
-        th, td {
-            border: 1px solid yellow;
-            padding: 10px;
-            text-align: center;
-            font-size: 18px;
-        }
-
-        th {
-            background: gold;
-            color: black;
-            text-shadow: 1px 1px 3px white;
-        }
-
-        /* Image Size & Effects */
-        .charts img {
-            width: 100%;
-            max-width: 600px;
-            height: auto;
-            display: block;
-            margin: 10px auto;
-            border-radius: 10px;
-            border: 2px solid yellow;
-            box-shadow: 0px 0px 20px gold;
-            transition: transform 0.3s ease-in-out;
-        }
-
-        .charts img:hover {
-            transform: scale(1.05);
-        }
-
-        /* Contact Button */
-        button {
-            background: black;
-            color: yellow;
-            padding: 10px 20px;
-            font-size: 16px;
-            border: 2px solid yellow;
-            cursor: pointer;
-            border-radius: 5px;
-            transition: all 0.3s ease-in-out;
-            box-shadow: 0px 0px 10px yellow;
-        }
-
-        button:hover {
-            background: yellow;
-            color: black;
-            box-shadow: 0px 0px 20px white;
-        }
-
-        /* Contact Details Box */
-        #contactDetails {
-            display: none;
-            background: black;
-            color: white;
-            padding: 10px;
-            text-align: center;
-            margin-top: 10px;
-            border-radius: 5px;
-            box-shadow: 0px 0px 10px yellow;
         }
     </style>
 </head>
 <body>
     <div class="banner">Sponsored by XYZ Company</div>
+    
     <div class="banner">2 months ke andar andar Gold 1 lakh pouchega - Confirmed News</div>
+    
     <h1>Live Gold & Silver Price Updates</h1>
     
     <div class="gold-price">
@@ -134,7 +31,7 @@
     
     <div class="charts">
         <img src="gold.jpeg" alt="Gold Price Chart">
-        <img src="iamge.jpeg" alt="Gold Price Chart">
+        <img src="goldbanner.jpeg" alt="Gold Price Chart">
     </div>
     
     <h2>Gold Rates in Last 10 Days</h2>
@@ -149,10 +46,21 @@
         <tr><td>Feb 10, 2025</td><td>₹7631</td><td>-0.04</td></tr>
         <tr><td>Feb 09, 2025</td><td>₹7634</td><td>0.59</td></tr>
         <tr><td>Feb 08, 2025</td><td>₹7634</td><td>0.59</td></tr>
+        <tr><td>Feb 07, 2025</td><td>₹7634</td><td>0.59</td></tr>
+        <tr><td>Feb 06, 2025</td><td>₹7589</td><td>0.61</td></tr>
+        <tr><td>Feb 05, 2025</td><td>₹7543</td><td>-1.54</td></tr>
+        <tr><td>Feb 04, 2025</td><td>₹7661</td><td>0.91</td></tr>
+        <tr><td>Feb 03, 2025</td><td>₹7592</td><td>0.77</td></tr>
     </table>
     
     <div class="banner">Sponsored by XYZ Company</div>
     
+
+    <div class="charts">
+        <img src="silver.jpeg" alt="Gold Price Chart">
+    </div>
+
+
     <h2>Gold Rates in Other Cities</h2>
     <table>
         <tr>
@@ -162,18 +70,38 @@
         <tr><td>Ahmedabad</td><td>₹75530</td></tr>
         <tr><td>Delhi</td><td>₹78010</td></tr>
         <tr><td>Chandigarh</td><td>₹78260</td></tr>
+        <tr><td>Mumbai</td><td>₹75580</td></tr>
+        <tr><td>Pune</td><td>₹76610</td></tr>
+        <tr><td>Kolkata</td><td>₹76300</td></tr>
+        <tr><td>Ranchi</td><td>₹76630</td></tr>
+        <tr><td>Jaipur</td><td>₹75990</td></tr>
+        <tr><td>Hyderabad</td><td>₹75860</td></tr>
+        <tr><td>Chennai</td><td>₹75610</td></tr>
     </table>
 
+    <!-- Contact for Sponsor Button -->
     <div style="text-align: center; margin-top: 20px;">
-        <button onclick="showContactDetails()">Contact for Sponsor</button>
+        <button onclick="showContactDetails()" style="background: rgb(245, 120, 3); color: yellow; padding: 10px 20px; font-size: 16px; border: none; cursor: pointer; border-radius: 5px;">
+            Contact for Sponsor
+        </button>
     </div>
 
-    <div id="contactDetails">
-        <p><strong>Email:</strong> kanchanranga97@gmail.com</p>
-        <p><strong>Instagram:</strong> @its_mayank3027</p>
-        <p><strong>Discord:</strong> satoruuu_gojoooo</p>
+    <!-- Contact Details (Hidden by Default) -->
+    <div id="contactDetails" style="display: none; background: black; color: white; padding: 10px; text-align: center; margin-top: 10px; border-radius: 5px;">
+        <p><strong>Email:</strong> <br> 
+            <a href="mailto:kanchanranga97@gmail.com" style="color: yellow;">kanchanranga97@gmail.com</a> / 
+            <a href="mailto:kanchanranga55@gmail.com" style="color: yellow;">kanchanranga55@gmail.com</a>
+        </p>
+        <p><strong>Instagram:</strong> <br> 
+            <a href="https://www.instagram.com/its_mayank3027" target="_blank" style="color: yellow;">@its_mayank3027</a> /
+            <a href="https://www.instagram.com/satoruuu_gojoooo" target="_blank" style="color: yellow;">@satoruuu_gojoooo</a>
+        </p>
+        <p><strong>Discord:</strong> <br> 
+            <span style="color: yellow;">satoruuu_gojoooo</span>
+        </p>
     </div>
 
+    <!-- JavaScript to Show Contact Details -->
     <script>
         function showContactDetails() {
             var details = document.getElementById("contactDetails");
